@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GoogleSearchAdvanceCreator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <header class="header">
+            <div class="logo">G</div>
+
+            <div>
+                <h1>GoogleSearchAdvanceCreator</h1>
+                <p>
+                    Build advanced Google searches without memorizing search operators.
+                </p>
+            </div>
+        </header>
+
+
+        <div class="layout">
+
+            <!-- SEARCH BUILDER -->
+            <main class="panel builder-panel">
+
+                <div class="panel-heading">
+                    <h2>Search Builder</h2>
+                    <p>
+                        Turn on the operators you want and enter their values.
+                    </p>
+                </div>
+
+
+                <!-- MAIN SEARCH -->
+                <section class="main-search">
+
+                    <label for="keywords">
+                        Main Search
+                    </label>
+
+                    <textarea
+                        id="keywords"
+                        placeholder="Example: artificial intelligence healthcare"
+                    ></textarea>
+
+                </section>
+
+
+                <!-- OPERATORS -->
+                <div id="operators"></div>
+
+
+                <!-- BUTTONS -->
+                <div class="button-row">
+
+                    <button
+                        id="generateBtn"
+                        class="primary-button"
+                    >
+                        Generate Search
+                    </button>
+
+                    <button
+                        id="clearBtn"
+                        class="secondary-button"
+                    >
+                        Clear All
+                    </button>
+
+                </div>
+
+            </main>
+
+
+            <!-- RESULT -->
+            <aside class="panel result-panel">
+
+                <div class="panel-heading">
+                    <h2>Generated Search</h2>
+
+                    <p>
+                        Your finished Google search appears here.
+                    </p>
+                </div>
+
+
+                <div
+                    id="result"
+                    class="result-box"
+                >
+                    <span class="placeholder">
+                        Your generated search will appear here...
+                    </span>
+                </div>
+
+
+                <div class="button-row">
+
+                    <button
+                        id="copyBtn"
+                        class="success-button"
+                    >
+                        Copy Search
+                    </button>
+
+                    <button
+                        id="googleBtn"
+                        class="secondary-button"
+                    >
+                        Search Google
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="status"
+                    class="status"
+                ></div>
+
+
+                <div class="quick-actions">
+
+                    <button id="exampleBtn">
+                        Load Example
+                    </button>
+
+                    <button id="commonBtn">
+                        Common Operators
+                    </button>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+
+        <footer>
+            GoogleSearchAdvanceCreator
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
